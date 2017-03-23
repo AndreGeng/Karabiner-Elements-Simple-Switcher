@@ -26,4 +26,4 @@ configFile.profiles.map(function(item, index) {
   }
   return false;
 });
-fs.writeFileSync(configFileLocation, JSON.stringify(configFile));
+fs.writeFileSync(configFileLocation, JSON.stringify(configFile, null, 2));
